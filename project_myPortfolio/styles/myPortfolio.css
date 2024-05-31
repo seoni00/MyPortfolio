@@ -1,0 +1,82 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.container {
+	position:relative;
+	width: 100%;
+	height: auto;
+	background-color: lightgrey;
+}
+
+/*** 레이아웃 확인하기 위한 장치 ***/
+.container, header, main, footer {
+	border: 1px solid black;
+}
+.title, .menu {
+	border: 1px solid black;
+}
+/*** 레이아웃 확인하기 위한 장치 설정 완료 ***/
+
+/*** header ***/
+header {
+	position: relative;
+	width: auto;
+	height: 97%;
+	padding: 10px;
+	margin:0px 150px;
+	background-color: darkgrey;
+}
+.title {
+	position:absolute;
+	top: 50%;
+	Left: 50%;
+    transform: translate(-50%, -55%);
+	padding: 10px;
+	margin: 10px;
+	font-size: 60px;
+	font-weight: 600;
+	display:inline-block;
+}
+.menu{
+	padding: 10px;
+	float: right;
+	background-color: white;
+}
+li {
+	margin: 5px;
+	padding: 5px;
+	list-style: none;
+	display:inline-block;
+
+	font-size: 18px;
+	font-weight: 600;
+}
+/*** HEADER 완료 ***/
+
+/*** main ***/
+main > div {
+	width: auto;
+	height: 50%; /*나중에 내용물 다 채웠으면 auto로 바꿀 것***/
+	padding: 20px;
+	margin:0px 150px;
+	background-color: white;
+	border: 1px solid black;
+}
+main > div > span, footer > span {
+	font-size: 30px;
+	font-weight: 550;
+	position:absolute;
+	Left: 50%;
+    transform: translateX(-50%);
+}
+
+/*** footer ***/
+footer {
+	width: auto;
+	height: 30%; /*나중에 내용물 다 채웠으면 auto로 바꿀 것***/
+	padding: 5px;
+	margin:0px 150px;
+	background-color: lightyellow;
+}
