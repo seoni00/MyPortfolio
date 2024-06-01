@@ -6,37 +6,47 @@
 	</head>
 	<body>
 		<div class="container">
-			<header class="home">
-				<div class="title">
-					Seoni's Portfolio
-				</div>
-				<sidebar>
-					<div class="menu">
-						<ul>
-							<li id="Home"><a href="#">Home</a></li>
-							<li id="About"><a href="#">About</a></li>
-							<li id="Skills"><a href="#">Skills</a></li>
-							<li id="Activity"><a href="#">Activity</a></li>
-							<li id="Contact"><a href="#">Contact</a></li>
-						</ul>
+			<!--HEADER-->
+			<header>
+				<section id="home">
+					<div class="title">
+						Seoni's Portfolio
 					</div>
-				</sidebar>
+					<sidebar>
+						<div class="menu">
+							<ul>
+								<li id="Home"><a href="#home">Home</a></li>
+								<li id="About"><a href="#about">About</a></li>
+								<li id="Skills"><a href="#skills">Skills</a></li>
+								<li id="Activity"><a href="#activity">Activity</a></li>
+								<li id="Contact"><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</sidebar>
+				</section>
 			</header>
 
+			<!--MAIN-->
 			<main>
-				<div class="about">
+				<section id="about">
 					<span>About Me</span>
-				</div>
-				<div class="skills">
+				</section>
+				<section id="skills">
 					<span>Skills</span>
-				</div>
-				<div class="activity">
+				</section>
+				<section id="activity">
 					<span>Activity</span>
-				</div>
+				</section>
 			</main>
-			<footer class="contact">
-				<span>Contact</span>
+
+			<!--FOOTER-->
+			<footer>
+				<section id="contact">
+					<span>Contact</span>
+				</section>
 			</footer>
+
+			<!--js파일import-->
 			<script type="text/javascript" src="scripts/myPortfolio.js"></script>
 		</div>
 	</body>

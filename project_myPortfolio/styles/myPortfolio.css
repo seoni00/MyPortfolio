@@ -56,7 +56,7 @@ li {
 /*** HEADER 완료 ***/
 
 /*** main ***/
-main > div {
+main > section {
 	width: auto;
 	height: 50%; /*나중에 내용물 다 채웠으면 auto로 바꿀 것***/
 	padding: 20px;
@@ -64,7 +64,7 @@ main > div {
 	background-color: white;
 	border: 1px solid black;
 }
-main > div > span, footer > span {
+main > section > span, footer > section {
 	font-size: 30px;
 	font-weight: 550;
 	position:absolute;
