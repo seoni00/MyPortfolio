@@ -1,3 +1,6 @@
+/*폰트 설정--미정*/
+
+/*초기 설정*/
 *{
 	padding: 0px;
 	margin: 0px;
@@ -10,6 +13,14 @@
 	background-color: lightgrey;
 }
 
+ul li, ol li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
 /*** 레이아웃 확인하기 위한 장치 ***/
 .container, header, main, footer {
 	border: 1px solid black;
@@ -17,7 +28,6 @@
 .title, .menu {
 	border: 1px solid black;
 }
-/*** 레이아웃 확인하기 위한 장치 설정 완료 ***/
 
 /*** header ***/
 header {
@@ -43,11 +53,11 @@ header {
 	padding: 10px;
 	float: right;
 	background-color: white;
+	z-index: 99;
 }
 li {
 	margin: 5px;
 	padding: 5px;
-	list-style: none;
 	display:inline-block;
 
 	font-size: 18px;
