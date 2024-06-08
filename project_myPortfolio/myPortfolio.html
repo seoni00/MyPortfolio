@@ -3,51 +3,65 @@
 		<meta charset="UTF-8">
 		<title>seoni's Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="styles/myPortfolio.css">
+		<!--title옆에 logo이미지를 삽입-->
+		<link rel="icon" href="images/forest.gif"/>
+		<!--제이쿼리 삽입 링크는 내 js파일보다 위에 있어야 함-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!--js파일import-->
+		<script src="scripts/myPortfolio.js"></script>
 	</head>
 	<body>
-		<div class="container">
-			<!--HEADER-->
-			<header>
-				<section id="home">
-					<div class="title">
-						Seoni's Portfolio
+		<div id="container">
+			<!--Home-->
+			<section id="home">
+				<sidebar>
+					<div class="menu1">
+						<ul>
+							<li id="menu_home"><a href="#home">Home</a></li>
+							<li id="menu_about"><a href="#about">About</a></li>
+							<li id="menu_skills"><a href="#skills">Skills</a></li>
+							<li id="menu_activity"><a href="#activity">Activity</a></li>
+							<li id="menu_contact"><a href="#contact">Contact</a></li>
+						</ul>
 					</div>
-					<sidebar>
-						<div class="menu">
-							<ul>
-								<li id="Home"><a href="#home">Home</a></li>
-								<li id="About"><a href="#about">About</a></li>
-								<li id="Skills"><a href="#skills">Skills</a></li>
-								<li id="Activity"><a href="#activity">Activity</a></li>
-								<li id="Contact"><a href="#contact">Contact</a></li>
-							</ul>
-						</div>
-					</sidebar>
-				</section>
-			</header>
+					<div class="menu2">
+						<ul>
+							<li id="menu_home"><a href="#home">Home</a></li>
+							<li id="menu_about"><a href="#about">About</a></li>
+							<li id="menu_skills"><a href="#skills">Skills</a></li>
+							<li id="menu_activity"><a href="#activity">Activity</a></li>
+							<li id="menu_contact"><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</sidebar>
+				<div id="title">
+					Seoni's Portfolio
+				</div>
+				
+			</section>
 
-			<!--MAIN-->
-			<main>
-				<section id="about">
-					<span>About Me</span>
-				</section>
-				<section id="skills">
-					<span>Skills</span>
-				</section>
-				<section id="activity">
-					<span>Activity</span>
-				</section>
-			</main>
 
-			<!--FOOTER-->
-			<footer>
-				<section id="contact">
-					<span>Contact</span>
-				</section>
-			</footer>
+			<!--About-->
+			<section id="about">
+				<span>About Me</span>
+			</section>
 
-			<!--js파일import-->
-			<script type="text/javascript" src="scripts/myPortfolio.js"></script>
+			<!--skills-->
+			<section id="skills">
+				<span>Skills</span>
+			</section>
+
+			<!--activity-->
+			<section id="activity">
+				<span>Activity</span>
+			</section>
+
+			<!--contactk-->
+			<section id="contact">
+				<span>Contact</span>
+			</section>
+
+			
 		</div>
 	</body>
 </html>

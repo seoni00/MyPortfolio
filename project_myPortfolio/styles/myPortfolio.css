@@ -6,7 +6,7 @@
 	margin: 0px;
 }
 
-.container {
+#container {
 	position:relative;
 	width: 100%;
 	height: auto;
@@ -22,71 +22,103 @@ a {
 }
 
 /*** 레이아웃 확인하기 위한 장치 ***/
-.container, header, main, footer {
-	border: 1px solid black;
+#container {
+	background-color: white;
 }
-.title, .menu {
-	border: 1px solid black;
+#home {
+	background-color: lightgrey;
+	border: 1px solid darkgrey;
+}
+#title, .menu1, .menu2 {
+	border: 1px solid darkgrey;
+}
+#about {
+	background-color: lightpink;
+	border: 1px solid darkgrey;
+}
+#skills {
+	background-color: lightyellow;
+	border: 1px solid darkgrey;
+}
+#activity{
+	background-color: lightgreen;
+	border: 1px solid darkgrey;
+}
+#contact{
+	background-color: lightblue;
+	border: 1px solid darkgrey;
 }
 
-/*** header ***/
-header {
-	position: relative;
-	width: auto;
-	height: 97%;
-	padding: 10px;
-	margin:0px 150px;
-	background-color: darkgrey;
+/*** 영역 크기 지정 ***/
+#container {
+	position:relative;
+	width: 100%;
+	height: auto;
+	padding: 0;
 }
-.title {
+#home, #about, #skills, #activity, #contact {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#home{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.55), rgba(0,0,0,0.5)) ,url('../images/futurism1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	/*filter:brightness(70%);/*모두 다 까매지는 문제 발생->linear-gradient를 이용*/
+}
+.menu1 {
 	position:absolute;
+	top: 0px;
+	right: 0px;
+	padding: 5px;
+	z-index: 100;/*다른 레이아웃에서도 뜰 수 있도록*/
+	background-color: black;
+}
+.menu1 li {
+	display: inline; /*혹은 block으로 바꿔도 괜찮음*/
+	padding: 5px 10px;
+	float: center;
+}
+.menu1 li a {
+	font-size: 25px;
+	font-weight:600;
+	color: white;
+	cursor: pointer; /*커서 모양이 바뀌도록*/
+}
+.menu1 li a:hover, .menu2 li a:hover{
+	color: yellow;
+}
+.menu2 {
+	top: 0px;
+	right: 0px;
+	position: fixed;
+	width: 100%;
+	padding: 5px;
+	z-index: 100;/*다른 레이아웃에서도 뜰 수 있도록*/
+	background-color: black;
+}
+.menu2 li {
+	display: inline; /*혹은 block으로 바꿔도 괜찮음*/
+	padding: 5px 10px;
+	float: center;
+}
+.menu2 li a {
+	font-size: 25px;
+	font-weight:600;
+	color: white;
+	cursor: pointer; /*커서 모양이 바뀌도록*/
+}
+
+#title {
+	position: absolute;
 	top: 50%;
-	Left: 50%;
-    transform: translate(-50%, -55%);
-	padding: 10px;
-	margin: 10px;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	font-size: 60px;
 	font-weight: 600;
-	display:inline-block;
-}
-.menu{
-	padding: 10px;
-	float: right;
-	background-color: white;
-	z-index: 99;
-}
-li {
-	margin: 5px;
-	padding: 5px;
-	display:inline-block;
-
-	font-size: 18px;
-	font-weight: 600;
-}
-/*** HEADER 완료 ***/
-
-/*** main ***/
-main > section {
-	width: auto;
-	height: 50%; /*나중에 내용물 다 채웠으면 auto로 바꿀 것***/
-	padding: 20px;
-	margin:0px 150px;
-	background-color: white;
-	border: 1px solid black;
-}
-main > section > span, footer > section {
-	font-size: 30px;
-	font-weight: 550;
-	position:absolute;
-	Left: 50%;
-    transform: translateX(-50%);
-}
-
-/*** footer ***/
-footer {
-	width: auto;
-	height: 30%; /*나중에 내용물 다 채웠으면 auto로 바꿀 것***/
-	padding: 5px;
-	margin:0px 150px;
-	background-color: lightyellow;
+	color: white;
+	text-align: center;
 }
