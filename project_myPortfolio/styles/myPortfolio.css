@@ -29,7 +29,7 @@ a {
 	background-color: lightgrey;
 	border: 1px solid darkgrey;
 }
-#title, .menu1, .menu2 {
+#title, /*.menu1,*/ .menu2 {
 	border: 1px solid darkgrey;
 }
 #about {
@@ -73,11 +73,20 @@ a {
 	position:absolute;
 	top: 0px;
 	right: 0px;
+	width: 43%;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+}
+.menu2 {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 100%;
 	padding: 5px;
 	z-index: 100;/*다른 레이아웃에서도 뜰 수 있도록*/
 	background-color: black;
 }
-.menu1 li {
+.menu1 li, .menu2 li {
 	display: inline; /*혹은 block으로 바꿔도 괜찮음*/
 	padding: 5px 10px;
 	float: center;
@@ -85,29 +94,17 @@ a {
 .menu1 li a {
 	font-size: 25px;
 	font-weight:600;
+	margin-left: 25px;
 	color: white;
 	cursor: pointer; /*커서 모양이 바뀌도록*/
 }
 .menu1 li a:hover, .menu2 li a:hover{
 	color: yellow;
 }
-.menu2 {
-	top: 0px;
-	right: 0px;
-	position: fixed;
-	width: 100%;
-	padding: 5px;
-	z-index: 100;/*다른 레이아웃에서도 뜰 수 있도록*/
-	background-color: black;
-}
-.menu2 li {
-	display: inline; /*혹은 block으로 바꿔도 괜찮음*/
-	padding: 5px 10px;
-	float: center;
-}
 .menu2 li a {
 	font-size: 25px;
-	font-weight:600;
+	font-weight:100;
+	margin-left: 170px;
 	color: white;
 	cursor: pointer; /*커서 모양이 바뀌도록*/
 }
@@ -117,6 +114,7 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	padding: 5px 15px 15px 17px;
 	font-size: 60px;
 	font-weight: 600;
 	color: white;
