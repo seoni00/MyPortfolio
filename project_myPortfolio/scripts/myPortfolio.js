@@ -19,18 +19,18 @@ $(function(){
 		}
 	})
 
-	//햄버거 버튼 클릭 시 모바일 메뉴가 보이도록 설정
-	/*let hambergerBtn = $(".hambergerBtn");
-	let close = $(".close");
-	let mobileGnb = $(".mobileGnb li");
-	let mobileMenu = $(".mobileGnb .mobileMenu");
-
-	hambergerBtn.click(function(){
-		mobileMenu.show();
-		$("body").addClass("hidden");
-	})
-	close.click(function(){
-		mobileMenu.hide();
-		$("body").removeClass("hidden");
-	})*/
 })
+function copy() {
+    /*복사 기능: execCommand기능 이용->textarea나 input내용밖에 카피 불가*/
+    const textArea = document.createElement('textarea');
+    textArea.value = `prettyjys@gmail.com`;
+    /*alert(textArea.value);*//*작동 확인용*/
+    document.body.appendChild(textArea);
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+    
+    document.execCommand('copy');
+    alert("copy e-mail");
+    textArea.setSelectionRange(0, 0);
+    document.body.removeChild(textArea);
+}

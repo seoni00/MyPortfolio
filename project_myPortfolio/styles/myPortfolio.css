@@ -6,6 +6,9 @@
 	margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;/*스크롤 부드럽게*/
+}
 #container {
 	position:relative;
 	width: 100%;
@@ -61,21 +64,30 @@ a {
 	width: 100%;
 	height: 100%;
 }
-#about, #skills, #activity, #contact{
+#about {
 	height: auto;
+	padding-bottom: 5%;
 }
 
 /*** 디자인 구체화 ***/
-#content_about, #content_skills, #content_activity, #content_contact {
-	margin: 5% 10%;
-	background-color: rgba(255,255,255,0.7);
-}
-#content_about h3, #content_skills h3, #content_activity h3, #content_contact{
+/***공통 디자인***/
+#content_about h3, #content_skills h3, #content_activity h3, #content_contact h3{
 	font-size: 35px;
+	text-align: center;
 }
 .content{
 	font-size: 20px;
+	margin: 0px 10px;
+	padding: 0px 10px;
 } 
+#content_about, #content_skills, #content_activity,#content_contact {
+	margin: 7% 20% 0% 20%;
+	padding: 20px 5% 20px 5%;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 25px;
+}
+
+
 /*** home ***/
 #home{
 	background-image:linear-gradient(rgba(0, 0, 0, 0.55), rgba(0,0,0,0.5)) ,url('../images/futurism1.jpg');
@@ -136,7 +148,47 @@ a {
 	text-align: center;
 }
 
+/*** about ***/
+#image{
+	padding: 5px;
+	margin: 5px;
+}
+#about img{
+	width: 250px;
+	margin: 10px;
+	float:left;
+}
+#about .content{
+	padding: 5px;
+	margin: 0px 0px 30px 0px;
+	height: auto;
+	display: inline-block;
+	border:3px dashed black;
+	border-radius:10px;
+}
+
 /*** contact ***/
+#contact .content {
+	padding:0% 10% 0% 10%;
+	height:400px;
+}
+#contact p {
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+}
+#contact .content > div{
+	position:relative;
+	display: block;
+	width: 200px;
+	left:52%;
+	transform: translateX(-50%);
+	margin:20px 0px;
+	border:1px solid darkgrey;
+}
+#contact .content > div:hover {
+	background-color: white;
+}
 #contact img{
 	width: 30px;
 	margin: 10px;
@@ -146,4 +198,12 @@ a {
 #contact label{
 	position: absolute;
 	transform: translate(5px, 10px);
+	color: black;
+	text-align: center;
+}
+#contact label:hover{
+	color: yellowgreen;
+}
+#mail, #instagram, #github, #tistory{
+	cursor: pointer;
 }
