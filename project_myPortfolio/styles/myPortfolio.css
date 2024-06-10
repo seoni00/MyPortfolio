@@ -49,7 +49,7 @@ a {
 	border: 1px solid darkgrey;
 }
 
-/*** 영역 크기 지정 ***/
+/*** 레이아웃 크기 지정 ***/
 #container {
 	position:relative;
 	width: 100%;
@@ -61,7 +61,22 @@ a {
 	width: 100%;
 	height: 100%;
 }
+#about, #skills, #activity, #contact{
+	height: auto;
+}
 
+/*** 디자인 구체화 ***/
+#content_about, #content_skills, #content_activity, #content_contact {
+	margin: 5% 10%;
+	background-color: rgba(255,255,255,0.7);
+}
+#content_about h3, #content_skills h3, #content_activity h3, #content_contact{
+	font-size: 35px;
+}
+.content{
+	font-size: 20px;
+} 
+/*** home ***/
 #home{
 	background-image:linear-gradient(rgba(0, 0, 0, 0.55), rgba(0,0,0,0.5)) ,url('../images/futurism1.jpg');
 	background-repeat: no-repeat;
@@ -119,4 +134,16 @@ a {
 	font-weight: 600;
 	color: white;
 	text-align: center;
+}
+
+/*** contact ***/
+#contact img{
+	width: 30px;
+	margin: 10px;
+	display: inline;
+}
+
+#contact label{
+	position: absolute;
+	transform: translate(5px, 10px);
 }
