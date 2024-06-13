@@ -55,6 +55,7 @@ a {
 /*** 레이아웃 크기 지정 ***/
 #container {
 	position:relative;
+	margin:0 auto;
 	width: 100%;
 	height: auto;
 	padding: 0;
@@ -64,10 +65,11 @@ a {
 	width: 100%;
 	height: 100%;
 }
-#about {
+#about, #skills {
 	height: auto;
 	padding-bottom: 5%;
 }
+
 
 /*** 디자인 구체화 ***/
 /***공통 디자인***/
@@ -154,7 +156,7 @@ a {
 	margin: 5px;
 }
 #about img{
-	width: 250px;
+	width: 40%;
 	margin: 10px;
 	float:left;
 }
@@ -165,6 +167,22 @@ a {
 	display: inline-block;
 	border:3px dashed black;
 	border-radius:10px;
+}
+
+/*** Skills ***/
+#skills img{
+	width: 20%;
+	margin: 20px;
+	display: inline;
+	background-color: lightgrey;
+	border-radius: 50%;
+}
+#skills img:hover{
+	background-color: antiquewhite;
+	cursor: pointer;
+	transition:0.2s;
+	width:20.5%;
+
 }
 
 /*** contact ***/

@@ -30,7 +30,7 @@ function copy() {
     textArea.setSelectionRange(0, 99999);
     
     document.execCommand('copy');
-    alert("copy e-mail");
+    alert("copied");
     textArea.setSelectionRange(0, 0);
     document.body.removeChild(textArea);
 }
